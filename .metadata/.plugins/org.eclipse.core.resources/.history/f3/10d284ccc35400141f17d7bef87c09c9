@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AWEA</string>
+    <string name="action_settings">Settings</string>
+    
+     <string-array name="spinner1">
+        <item>Cow</item>
+        <item>Pig</item>
+        <item>Chicken</item>
+        <item>Dog</item>
+        <item>Horse</item>
+    </string-array>
+
+</resources>

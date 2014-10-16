@@ -1,0 +1,17 @@
+package com.exmaple.awea.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HomeActivityTest {
+	
+	
+	
+	@Test
+	public void onCreate(){
+		assertTrue(1 == 1);
+	}
+	
+	
+}

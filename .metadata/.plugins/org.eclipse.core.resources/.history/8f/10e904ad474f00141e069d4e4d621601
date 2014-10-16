@@ -1,0 +1,15 @@
+package com.exmaple.awea.test;
+
+import org.junit.Test;
+
+public class HomeActivityTest {
+	
+	
+	
+	@Test
+	public void onCreate(){
+		
+	}
+	
+	
+}

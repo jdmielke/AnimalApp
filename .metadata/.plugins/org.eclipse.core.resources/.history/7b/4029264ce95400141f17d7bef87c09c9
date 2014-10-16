@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	int girth = Integer.valueOf(input1.getText().toString());
+}
+
