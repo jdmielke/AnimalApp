@@ -8,6 +8,7 @@
     <string-array name="spinner1">
         <item>Cow</item>
         <item>Pig</item>
+        <item>Goat</item>
         <item>Horse</item>
     </string-array>
 

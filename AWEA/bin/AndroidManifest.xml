@@ -23,7 +23,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MeasurementActivity"
+            android:name=".CowMeasurementActivity"
+            android:label="@string/title_activity_measurement"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.awea.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GoatMeasurementActivity"
             android:label="@string/title_activity_measurement"
             android:parentActivityName=".MainActivity" >
             <meta-data

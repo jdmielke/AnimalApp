@@ -4,9 +4,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 	
 	public static TextView weight;
+	private String selectedAnimal;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +31,31 @@ public class MainActivity extends ActionBarActivity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		// Apply the adapter to the spinner
 		spinner.setAdapter(adapter);
-		
+		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+		    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+		        if(pos == 0){
+		        	selectedAnimal = "cow";
+		        }else if(pos == 1) {
+		        	selectedAnimal = "pig";
+		        }else if(pos == 2){
+		        	selectedAnimal = "goat"; 
+		        }
+		        Log.d("ANIMAL SELECTED:    ", selectedAnimal);
+		    }
+		    public void onNothingSelected(AdapterView<?> parent) {
+		    }
+		});
 		weight = (TextView) findViewById(R.id.textView4);
 		
 	}
 	
 	public void goToMeasurementPage(View view){
-		Intent intent = new Intent(this, MeasurementActivity.class);
-		
+		Intent intent = null;
+		if(selectedAnimal.equalsIgnoreCase("cow")) {
+			intent = new Intent(this, CowMeasurementActivity.class);
+		}else if(selectedAnimal.equals("goat")){
+			intent = new Intent(this, GoatMeasurementActivity.class);
+		}
 		startActivity(intent);
 	}
 
