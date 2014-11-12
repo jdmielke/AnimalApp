@@ -3,3 +3,8 @@
 1415787818211	Rename type 'MeasurementActivity'
 1415788350939	Rename method 'goToCowMeasurementPage'
 1415789239357	Rename resource 'activity_measurement.xml'
+1415818419324	Rename type 'CowMeasurementActivity'
+1415818566421	Rename resource 'activity_cow_measurement.xml'
+1415819913482	Rename resource 'beefdiagram.png'
+1415821679811	Delete element
+1415821692162	Delete element

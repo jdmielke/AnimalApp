@@ -23,12 +23,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CowMeasurementActivity"
+            android:name=".CowDairyMeasurementActivity"
             android:label="@string/title_activity_measurement"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.awea.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CowBeefMeasurementActivity"
+            android:label="@string/title_activity_cow_beef_measurement" >
+        </activity>
+        <activity
+            android:name=".GoatBeetalMeasurementActivity"
+            android:label="@string/title_activity_goat_beetal_measurement" >
+        </activity>
+        <activity
+            android:name=".PigPorkMeasurementActivity"
+            android:label="@string/title_activity_pig_pork_measurement" >
         </activity>
     </application>
 

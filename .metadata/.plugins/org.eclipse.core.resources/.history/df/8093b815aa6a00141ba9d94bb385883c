@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AWEA</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinnerTitle">Select Animal</string>
+
+    <string-array name="spinner1">
+        <item>Cow - Dairy</item>
+        <item>Cow - Beef</item>
+        <item>Pig - Pork</item>
+        <item>Goat - Beetal</item>
+        <item>Horse - Quarter Horse</item>
+    </string-array>
+
+    <string name="title_activity_measurement">MeasurementActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_cow_beef_measurement">CowBeefMeasurementActivity</string>
+    <string name="title_activity_goat_beetal_measurement">GoatBeetalMeasurementActivity</string>
+    <string name="title_activity_pig_pork_measurement">PigPorkMeasurementActivity</string>
+
+</resources>
